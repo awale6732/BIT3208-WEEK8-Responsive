@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Cakes - Contact</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #fff5f5; font-size: 16px; }
+        nav { background: #e91e8c; padding: 15px; }
+        .nav-brand { color: white; font-size: 22px; font-weight: bold; text-align: center; display: block; }
+        .nav-links { display: flex; flex-direction: column; align-items: center; margin-top: 10px; gap: 8px; }
+        .nav-links a { color: white; text-decoration: none; font-size: 15px; padding: 5px 10px; }
+        .nav-links a:hover { background: #c2185b; border-radius: 5px; }
+        .page-header { background: linear-gradient(135deg, #e91e8c, #ff6b9d); color: white; text-align: center; padding: 30px 20px; }
+        .page-header h1 { font-size: 28px; }
+        .contact-content { padding: 20px 15px; display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .contact-form, .contact-info { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .contact-form h2, .contact-info h2 { color: #e91e8c; margin-bottom: 15px; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        .contact-form textarea { height: 100px; resize: vertical; }
+        .contact-form button { width: 100%; padding: 12px; background: #e91e8c; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .info-item { padding: 8px 0; border-bottom: 1px solid #f0f0f0; color: #666; }
+        .info-item strong { color: #e91e8c; }
+        footer { background: #e91e8c; color: white; text-align: center; padding: 20px; margin-top: 20px; }
+        @media (min-width: 768px) {
+            .nav-links { flex-direction: row; justify-content: center; gap: 20px; }
+        }
+        @media (min-width: 1024px) {
+            nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; }
+            .nav-brand { text-align: left; }
+            .nav-links { margin-top: 0; }
+            .contact-content { grid-template-columns: 2fr 1fr; padding: 30px 40px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span class="nav-brand">Sweet Cakes</span>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="training.html">Training</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="page-header">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
+    </div>
+    <div class="contact-content">
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <input type="text" placeholder="Your Full Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="info-item"><strong>Address:</strong> 123 Baker Street, Nairobi, Kenya</div>
+            <div class="info-item"><strong>Phone:</strong> +254 700 000 000</div>
+            <div class="info-item"><strong>Email:</strong> info@sweetcakes.com</div>
+        </div>
+    </div>
+    <footer>
+        <p>Sweet Cakes Training and Supplies &copy; 2026</p>
+    </footer>
+</body>
+</html>
