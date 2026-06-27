@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdirahman - Profile</title>
+    <style>
+        /* Mobile First - Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #2196F3;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+            display: block;
+            font-size: 16px;
+        }
+
+        /* Profile Section */
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            max-width: 100%;
+            object-fit: cover;
+            border: 4px solid #2196F3;
+        }
+
+        .profile-info {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .profile-info h1 {
+            color: #2196F3;
+            font-size: 24px;
+        }
+
+        .profile-info p {
+            color: #666;
+            margin: 5px 0;
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .about h2 {
+            color: #2196F3;
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .contact h2 {
+            color: #2196F3;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            margin: 8px 0;
+            color: #444;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #2196F3;
+            color: white;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* Tablet - 768px and above */
+        @media (min-width: 768px) {
+            body { font-size: 18px; padding: 20px; }
+
+            nav {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+            nav a { display: inline; }
+
+            .profile {
+                flex-direction: row;
+                align-items: center;
+                gap: 30px;
+            }
+
+            .profile-info { text-align: left; }
+        }
+
+        /* Desktop - 1024px and above */
+        @media (min-width: 1024px) {
+            body { font-size: 20px; max-width: 1000px; margin: 0 auto; }
+
+            .profile img { width: 200px; height: 200px; }
+
+            .profile-info h1 { font-size: 32px; }
+
+            .content {
+                display: flex;
+                gap: 20px;
+            }
+
+            .about { flex: 2; }
+            .contact { flex: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="profile">
+        <img src="https://via.placeholder.com/150" alt="Abdirahman Profile Picture">
+        <div class="profile-info">
+            <h1>Abdirahman</h1>
+            <p>Computer Science Student</p>
+            <p>Passionate about Web Development</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Abdirahman. I am a Computer Science student with a strong interest in web development and technology. I enjoy building web applications and learning new programming skills every day.</p>
+            <br>
+            <p>I am currently studying Advanced Web Design and working on projects involving PHP, MySQL, HTML, and CSS.</p>
+        </div>
+
+        <div class="contact">
+            <h2>Contact Information</h2>
+           <p>Email: abdirahman@email.com</p>
+<p>Phone: +254 700 000 000</p>
+<p>Location: Nairobi, Kenya</p>
+<p>Course: Computer Science</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Abdirahman. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
